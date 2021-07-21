@@ -1,0 +1,15 @@
+.theme_switch{
+    right: 30px;
+    position: absolute;
+    top: 20px;
+}
+
+.main_navigation{
+    overflow: auto;
+}
+@media (max-width: 300px){
+.navlinks span{
+    display: none;
+}
+}
+
