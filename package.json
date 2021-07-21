@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple personal & portfolio template",
   "version": "0.1.0",
-  "author": "AbdelAli <abdali.dahir@gmail.com>",
+  "author": "Shubham Takankhar <takankhar@gmail.com>",
   "dependencies": {
     "gatsby": "^2.28.2",
     "gatsby-image": "^2.11.0",
@@ -31,6 +31,7 @@
     "react-github-btn": "^1.2.0",
     "react-github-button": "^0.1.11",
     "react-helmet": "^6.1.0",
+    "react-is": "^17.0.2",
     "sharp": "^0.26.3",
     "styled-components": "^5.1.1"
   },
