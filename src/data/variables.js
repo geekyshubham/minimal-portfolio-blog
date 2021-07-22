@@ -1,11 +1,14 @@
   
-export default {
+export const colors = {
   primary: "#ff2d2d",
+  secondar: "#ff2d2d",
   inverse: "#fff",
   // colors
   darkGrey: "#333447",
   black: "#000",
+}
 
+export const sizes = {
   // grid
   width: "96%",
   wrapperWidth: "65rem",

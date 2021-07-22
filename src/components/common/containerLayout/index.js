@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import variables from "../../../data/variables";
+import {sizes} from "../../../data/variables";
 
 export const ContainerLayout = styled.div`
-  width: ${variables.width};
+  width: ${sizes.width};
   margin-left: auto;
   margin-right: auto;
 
   &.wrapper {
-    max-width: ${variables.wrapperWidth};
+    max-width: ${sizes.wrapperWidth};
     margin: auto;
   }
-  @media only screen and (min-width: ${variables.breakpointLarge}) {
+  @media only screen and (min-width: ${sizes.breakpointLarge}) {
     max-width: 75rem;
   }
   

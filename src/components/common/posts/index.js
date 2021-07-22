@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import variables from '../../../data/variables';
+import {colors,sizes} from '../../../data/variables';
 
 export const Intro = styled.div`
   padding: 8rem 0 4rem 0;
@@ -16,7 +16,7 @@ export const Title = styled.h1`
   font-family: "GT-Walsheim-Pro-Bold";
   font-size: 2rem;
   text-transform: capitalize;
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     font-size: 1.5rem;
   }
 `
@@ -32,7 +32,7 @@ export const Text = styled.p`
   color: #000000;
   margin-top: 2rem;
   text-align: justify;
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     margin-top: 1rem;
     font-size: .8rem;
   }
@@ -49,7 +49,7 @@ export const SmallText = styled.small`
   > span {
     padding-left: 5px;
   }
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     font-size: .6rem;
   }
 `
@@ -59,7 +59,7 @@ export const WorkPost = styled.article`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-bottom: 5rem;
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     grid-template-columns: 1fr;
     border: 10px solid #fff;
     border-radius: .9rem;
@@ -67,7 +67,7 @@ export const WorkPost = styled.article`
 	}
   > div.content {
     padding: 2rem 3rem;
-    @media(max-width: ${variables.breakpointPhone}) {
+    @media(max-width: ${sizes.breakpointPhone}) {
       padding: 1rem 1rem;
     }
   }
@@ -77,7 +77,7 @@ export const WorkPost = styled.article`
       margin-bottom: .5rem;
       max-height: 400px;
       overflow: hidden;
-      @media(min-width: ${variables.breakpointPhone}) {
+      @media(min-width: ${sizes.breakpointPhone}) {
         border: 10px solid #fff;
         border-radius: .9rem;
         box-shadow: 0 17px 56px rgba(125,127,129,.17);
@@ -96,12 +96,12 @@ export const WorkPost = styled.article`
 `
 export const Category = styled.span`
   font-family: "GT-Walsheim-Pro-Bold";
-  color: ${variables.primary};
+  color: ${colors.primary};
   text-transform: uppercase;
   letter-spacing: .05em;
   font-size: .8em;
   border-radius: .25rem;
   padding: .5rem 1rem;
   margin-right: 1rem;
-  border: 3px solid ${variables.primary};
+  border: 3px solid ${colors.primary};
 `

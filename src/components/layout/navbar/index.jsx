@@ -1,3 +1,4 @@
+import {theme_switch,main_navigation,logo_anim} from './style.module.css'
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
@@ -5,9 +6,6 @@ import { User, Briefcase, Feather,  GitHub, Sun , Moon } from 'react-feather'
 
 import {NavbarElement, NavbarList, NavbarLogo} from './style'
 
-import {theme_switch,main_navigation,logo_anim} from './style.module.css'
-
-import "./style.css"
 
 const Navbar = ({ siteTitle }) => (
   <nav>

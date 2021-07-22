@@ -15,7 +15,7 @@ const Footer = () => {
 						<FooterSocialMedia>
 							{socialMedia.map(({ id, name, url }) => (
 								<li key={id}> 
-									<div className="social-media-icons">{name=="linkedin"&&<Linkedin/>}{name=="github"&&<GitHub/>}{name=="twitter"&&<Twitter/>}</div>
+									<div className="social-media-icons">{name==="linkedin"&&<Linkedin/>}{name==="github"&&<GitHub/>}{name==="twitter"&&<Twitter/>}</div>
 									<MediaLink className="lined-link" href={url} target="_blank" rel="noopener noreferrer" aria-label={`follow us on ${name}`}>
 										{name}
 									</MediaLink> 
@@ -28,11 +28,11 @@ const Footer = () => {
 						</div>
 					</FooterBody>
 					<div className="box">
-						<SubRight> We abstract to make it look complex. But in real its just simple. </SubRight>
+						<SubRight> " It's actually very simple. " </SubRight>
 						<CopyRight className="text-dark">
 							© 
 							
-							Copyright {new Date().getFullYear()} <span> Built with {` `} 💖
+							Copyright {new Date().getFullYear()} <span> Built with {` `} ❤️ 
 								{" "}
           		</span>  by {data.SiteAuthor} </CopyRight>
 					</div>

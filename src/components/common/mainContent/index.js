@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import variables from '../../../data/variables';
+import {sizes} from '../../../data/variables';
 
 export const MainContent = styled.div`
-  @media(min-width: ${variables.breakpointPhone}) {
+  @media(min-width: ${sizes.breakpointPhone}) {
     background: linear-gradient(to bottom,rgb(239 233 233 / 46%),transparent 22%);
   }
 `

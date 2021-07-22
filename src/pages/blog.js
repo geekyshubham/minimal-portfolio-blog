@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Link, graphql } from "gatsby"
 import { Calendar, Clock } from 'react-feather'
 import Img from "gatsby-image"
@@ -15,7 +15,7 @@ const BlogIndex = ({ data }) => {
   return (
     <>
       <Layout> 
-        <SEO title="Blog Home Page" />
+        <Seo title = "Blog Home Page" / >
         <Intro>
           <ContainerLayout>
 

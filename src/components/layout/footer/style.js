@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import variables from '../../../data/variables';
+import {colors,sizes} from '../../../data/variables';
 
 export const FooterStyle = styled.footer`
 	padding-top: 1rem;
@@ -7,10 +7,10 @@ export const FooterStyle = styled.footer`
 	z-index: 0;
 	position: relative;
 	text-align: left;
-	@media(min-width: ${variables.breakpointPhone}) {
+	@media(min-width: ${sizes.breakpointPhone}) {
 		background: linear-gradient(to top, #efe9e9, transparent 50%);
 	}
-	@media(max-width: ${variables.breakpointPhone}) {
+	@media(max-width: ${sizes.breakpointPhone}) {
 		padding-bottom: 2rem;
 		padding-left: .5rem;
 		padding-right: .5rem;
@@ -20,8 +20,8 @@ export const FooterStyle = styled.footer`
 		font-size: 2rem;
 		font-family: "GT-Walsheim-Pro-Bold";
 		line-height: 1.2;
-		color: ${variables.primary};
-		@media(max-width: ${variables.breakpointPhone}) {
+		color: ${colors.primary};
+		@media(max-width: ${sizes.breakpointPhone}) {
 			font-size: 2rem;
 		}
 	}
@@ -45,14 +45,14 @@ export const FooterBody = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	@media(max-width: ${variables.breakpointPhone}) {
+	@media(max-width: ${sizes.breakpointPhone}) {
 		grid-template-columns: 1fr;
 	}
 `
 export const FooterSocialMedia = styled.ul`
 	list-style: none;
 	padding-left: 0;
-	@media(max-width: ${variables.breakpointPhone}) {
+	@media(max-width: ${sizes.breakpointPhone}) {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

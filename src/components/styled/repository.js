@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import variables from '../../data/variables';
+import {colors,sizes} from '../../data/variables';
 
 export const RepoGrid = styled.div`
-  @media(min-width: ${variables.breakpointPhone}) {
+  @media(min-width: ${sizes.breakpointPhone}) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
@@ -36,7 +36,7 @@ export const RepoContent = styled.div`
   &:hover {
     box-shadow: 0px 0px 36px 25px rgb(0 0 0 / 3%);
     h2 a {
-      color: ${variables.primary};
+      color: ${colors.primary};
     }
   }
 `
@@ -46,7 +46,7 @@ export const Title = styled.h2`
   font-size: 1.4rem;
   text-transform: capitalize;
   font-family: "GT-Walsheim-Pro-Bold";
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     font-size: 1rem;
   }
 `
@@ -60,7 +60,7 @@ export const Text = styled.p`
   margin-top: .25rem;
   font-size: 1rem;
   text-transform: capitalize;
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     font-size: .9rem;
   }
 `
@@ -83,7 +83,7 @@ export const FooterItem = styled.span`
       stroke: #FFC107;
     }
   }
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     margin-right: .49rem;
     font-size: .7rem;
     > svg {

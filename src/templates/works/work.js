@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Seo from "../../components/seo"
 import { Calendar } from 'react-feather'
 
 import {Intro, Title, ArticlePost, SmallText, ArticleBody} from '../../components/styled/posts'
@@ -14,7 +14,7 @@ const portfolioWork = ({data, pageContext, location}) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
+      <Seo
         title={work.frontmatter.title}
         description={work.frontmatter.description || work.excerpt}
       />

@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import variables from "../../../data/variables";
 import './fonts.css';
+import { createGlobalStyle } from 'styled-components';
+import {colors,sizes} from "../../../data/variables";
+
 
 export const GlobalStyle = createGlobalStyle`
   // normalize
@@ -8,6 +9,21 @@ export const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar{
+    width: 6px;
+  }
+
+  ::-webkit- scrollbar -track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: ${colors.primary};
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${colors.darkGrey};
   }
   html {
     box-sizing: border-box;
@@ -104,13 +120,12 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     .text-dark {
-      color: ${variables.black};
+      color: ${colors.black};
     }
     .text-primary {
-      color: ${variables.primary};
+      color: ${colors.primary};
     }
     .align-middle {
-      padding-left:24px;
       vertical-align: middle;
     }
 
@@ -143,7 +158,7 @@ display:none;
     display: block;
     width: 100%;
     height: 5px;
-    background-color: ${variables.primary};
+    background-color: ${colors.primary};
     transform: scale(0, 1);
     transform-origin: 100% 50%;
     will-change: transform;
@@ -152,7 +167,7 @@ display:none;
   }
   &:hover:after,
   &.active:after {
-    background-color: ${variables.primary};
+    background-color: ${colors.primary};
     transform: scale(1);
     transform-origin: 0 50%;
     transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.2s ease-out, 
@@ -162,5 +177,40 @@ display:none;
 
 .error__emoji {
   width: 30vw;
+}
+
+// navbar anim.
+
+.anim-width{
+        max-width: fit-content;
+}
+.logo-anim span{
+  margin-left: 30px;
+}
+
+.logo-anim {
+    
+  color: rgb(0, 0, 0);  
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ff2d2d; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(15, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff2d2d }
 }
 `

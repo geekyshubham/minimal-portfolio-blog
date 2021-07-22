@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import variables from '../../../data/variables';
+import {colors,sizes} from '../../../data/variables';
 
 export const NavbarLogo = styled.div`
   a {
-    color: ${variables.black};
-    font-size: 2.3rem;
+    color: ${colors.black};
+    font-size: 2rem;
     font-family: "Consolas";
   }
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     display: none
   }
 `
@@ -16,7 +16,7 @@ export const NavbarElement = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  @media(max-width: ${variables.breakpointPhone}) {
+  @media(max-width: ${sizes.breakpointPhone}) {
     grid-template-columns: 1fr;
     text-align: center;
     width: 100%;
@@ -45,7 +45,7 @@ export const NavbarList = styled.ul`
       display: block;
       vertical-align: middle;
     }
-    @media(max-width: ${variables.breakpointPhone}) {
+    @media(max-width: ${sizes.breakpointPhone}) {
       font-size: 1rem;
     }
   }

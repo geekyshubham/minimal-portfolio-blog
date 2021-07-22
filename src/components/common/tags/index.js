@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import variables from '../../../data/variables';
+import {colors} from '../../../data/variables';
 
 export const Tag = styled.a`
   color: #a9aaab;
@@ -14,8 +14,8 @@ export const Tag = styled.a`
   display: inline-block;
   margin-bottom: 1rem;
   &.active {
-    background: ${variables.primary};
-    color: ${variables.inverse};
+    background: ${colors.primary};
+    color: ${colors.inverse};
     font-family: "GT-Walsheim-Pro-Bold";
   }
 `

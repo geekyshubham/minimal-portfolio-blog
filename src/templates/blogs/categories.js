@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Layout from "../../components/layout"
 import { Link, graphql } from "gatsby"
 import { Calendar, Clock } from 'react-feather'
 import Img from "gatsby-image"
 import CategoriesTags from '../../components/CategoriesTags/categoriesTags';
 import {ContainerLayout, WorkPost, Intro, SubTitle, Title, Text, HeaderIntro, SubText, SmallText, UnderLink, ReadMore} from "../../components/common"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Seo from "../../components/seo"
 
 const Categories = ({ data }) => {
   const { edges} = data.allMarkdownRemark
@@ -16,7 +16,7 @@ const Categories = ({ data }) => {
 
   return (
     <Layout> 
-      <SEO title="Blog Home Page" />
+      <Seo title="Blog Home Page" />
       <Intro>
         <ContainerLayout>
 

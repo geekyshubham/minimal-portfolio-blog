@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import {Tag, ContainerLayout, WorkPost, Category, Intro, SubTitle, Title, Text} from "../components/common"
@@ -11,7 +11,7 @@ const WorkIndex = ({ data }) => {
   return (
     <>
       <Layout> 
-        <SEO title="Showcases" />
+        <Seo title = "Showcases" / >
         <Intro>
           <ContainerLayout>
 
