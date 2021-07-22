@@ -1,6 +1,6 @@
 import './fonts.css';
 import { createGlobalStyle } from 'styled-components';
-import {colors,sizes} from "../../../data/variables";
+import {colors} from "../../../data/variables";
 
 
 export const GlobalStyle = createGlobalStyle`
