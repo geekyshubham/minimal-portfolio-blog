@@ -28,7 +28,7 @@ const Footer = () => {
 						</div>
 					</FooterBody>
 					<div className="box">
-						<SubRight> " â€œCreativity is nothing but a mind set free." </SubRight> <Author> - Torrie T. Asai </Author>
+						<SubRight> " Creativity is nothing but a mind set free." </SubRight> <Author> - Torrie T. Asai </Author>
 						<CopyRight className="text-dark">
 							© 
 							
