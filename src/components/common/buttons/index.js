@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors,sizes} from "../../../data/variables";
+import {colors} from "../../../data/variables";
 
 export const ButtonDefault = styled.a`
   cursor: pointer;

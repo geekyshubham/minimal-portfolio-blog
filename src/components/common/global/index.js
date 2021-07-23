@@ -189,7 +189,6 @@ display:none;
 }
 
 .logo-anim {
-    
   color: rgb(0, 0, 0);  
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -213,4 +212,7 @@ display:none;
   from, to { border-color: transparent }
   50% { border-color: #ff2d2d }
 }
+
+box{
+max-width:max-content;}
 `

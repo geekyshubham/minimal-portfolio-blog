@@ -49,6 +49,9 @@ export const FooterBody = styled.div`
 		grid-template-columns: 1fr;
 	}
 `
+export const Author = styled.div`
+	text-align: right;
+`
 export const FooterSocialMedia = styled.ul`
 	list-style: none;
 	padding-left: 0;

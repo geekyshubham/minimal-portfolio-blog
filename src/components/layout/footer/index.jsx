@@ -1,7 +1,7 @@
 import React from 'react';
 import socialMedia from "../../../data/socialMedia.json";
 import data from "./../../../data/data";
-import { FooterStyle, FooterBody, SubRight, CopyRight, MediaLink, FooterSocialMedia } from './style'
+import { FooterStyle, FooterBody, SubRight, CopyRight, MediaLink, FooterSocialMedia , Author } from './style'
 import { Linkedin,GitHub, Twitter} from 'react-feather'
 
 import {ContainerLayout, ButtonDefault} from '../../common'
@@ -28,7 +28,7 @@ const Footer = () => {
 						</div>
 					</FooterBody>
 					<div className="box">
-						<SubRight> " It's actually very simple. " </SubRight>
+						<SubRight> " â€œCreativity is nothing but a mind set free." </SubRight> <Author> - Torrie T. Asai </Author>
 						<CopyRight className="text-dark">
 							© 
 							

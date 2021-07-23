@@ -31,9 +31,14 @@ export const SmallText = styled.small`
 `
 export const ArticleBody = styled.div `
   margin-top: 5rem;
+  
   p {
-    font-size: 1.5rem;
-    font-family: "GT-Walsheim-Pro-Medium";
+    text-align: initial;
+    font-size: 1rem;
+    font-family: "GT-Walsheim-Pro-Regular";
+  }
+  h1 h2 h3{
+    text-align:center;
   }
 `
 
