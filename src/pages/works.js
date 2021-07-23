@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {Tag, ContainerLayout, WorkPost, Category, Intro, SubTitle, Title, Text} from "../components/common"
 
 const WorkIndex = ({ data }) => {
@@ -27,7 +27,7 @@ const WorkIndex = ({ data }) => {
                     <div className="media">
                       <div className="image-wrapper">
                         <Link to={node.fields.slug}>
-                          <Img fluid={node.frontmatter.image.childImageSharp.fluid} title="work title" />
+                          <GatsbyImage image={getImage(node.frontmatter.image)} alt={node.frontmatter.title} />
                         </Link>
                       </div>
                     </div>
@@ -81,9 +81,9 @@ export const pageQuery = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 600, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  placeholder: BLURRED formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
             tags

@@ -1,17 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import {AboutSection, Avatar, Title, Text, SubTitle} from './style';
+import { getImage } from "gatsby-plugin-image"
 import {SectionIntro, ContainerLayout, ResumeButton} from "../common";
 
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "profile.webp" }) {
-        childImageSharp {
-          fluid(maxWidth: 550) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+       childImageSharp {
+         gatsbyImageData(
+           placeholder: BLURRED formats: [AUTO, WEBP, AVIF]
+         )
+       }
       }
     }
   `)
@@ -21,7 +22,7 @@ const About = () => {
         <ContainerLayout>
           <AboutSection>
             <div>
-              <Avatar fluid={data.placeholderImage.childImageSharp.fluid} alt="user photo" />
+              <Avatar image={getImage(data.placeholderImage)} alt="Shubham Takankhar" />
               {/* <SubTitle> Full Stack Developer</SubTitle> */}
             </div> 
             <div>

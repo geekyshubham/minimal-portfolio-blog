@@ -26,7 +26,7 @@ slug: permutations-string-recursion-
 #### Source Code:
 
 
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 
