@@ -5,7 +5,7 @@ module.exports = {
   SiteAuthor: 'Shubham Takankhar',
   SiteDescription: 'Shubham Takankhar is a Programmer, Security Researcher, Technologist and Blogger.',
   defaultDescription: 'GeekyShubham is personal portfolio and blog of Shubham Takankhar.',
-  url: "https://www.geekyshubham.tk",
+  SiteUrl: "https://www.geekyshubham.tk",
   image: "/images/siteLogo.png",
   twitterUsername: "@digitl_shado",
   githubApiQuery: `query ($number_of_repos: Int!) {

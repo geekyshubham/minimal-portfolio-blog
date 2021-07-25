@@ -8,9 +8,11 @@ module.exports = {
     description: data.SiteDescription,
     author: data.SiteAuthor,
     logoTitle: data.SiteLogoText,
+    siteUrl: data.SiteUrl,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-image`,
@@ -36,6 +38,17 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/assets/img`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.geekyshubham.tk',
+        sitemap: 'https://www.geekyshubham.tk/sitemap.xml',
+        policy: [{
+          userAgent: '*',
+          allow: '/'
+        }]
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
