@@ -3,7 +3,7 @@ module.exports = {
   Sitelogo: '#',
   SiteLogoText: '<GeekyShubham/>',
   SiteAuthor: 'Shubham Takankhar',
-  SiteDescription: 'Shubham Takankhar is a Programmer, Security Researcher, Technologist, Blogger and .',
+  SiteDescription: 'Shubham Takankhar is a Programmer, Security Researcher, Technologist and Blogger.',
   defaultDescription: 'GeekyShubham is personal portfolio and blog of Shubham Takankhar.',
   url: "https://www.geekyshubham.tk",
   image: "/images/siteLogo.png",

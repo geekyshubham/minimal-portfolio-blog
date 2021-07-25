@@ -25,6 +25,12 @@ export const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     background: ${colors.darkGrey};
   }
+
+  @font-face {
+  font-family: 'GT-Walsheim-Pro-Regular';
+  font-display: swap;
+}
+
   html {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
