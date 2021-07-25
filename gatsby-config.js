@@ -62,12 +62,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GeekyShubham`,
-        short_name: `starter`,
+        name: `Shubham Takankhar`,
+        short_name: `GeekyShubham`,
+        description: data.SiteDescription,
         start_url: `/`,
         background_color: `#000`,
-        theme_color: `#000`,
-        display: `minimal-ui`,
+        theme_color: `#FF2D2D`,
+        display: `fullscreen`,
         icon: `src/assets/img/portfolio-icon.png`, // This path is relative to the root of the site.
       },
     },

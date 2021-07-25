@@ -3,8 +3,11 @@ module.exports = {
   Sitelogo: '#',
   SiteLogoText: '<GeekyShubham/>',
   SiteAuthor: 'Shubham Takankhar',
-  SiteDescription: 'Full Stack Developer',
-  defaultDescription: 'Software engineer!', 
+  SiteDescription: 'Shubham Takankhar is a Programmer, Security Researcher, Technologist, Blogger and .',
+  defaultDescription: 'GeekyShubham is personal portfolio and blog of Shubham Takankhar.',
+  url: "https://www.geekyshubham.tk",
+  image: "/images/siteLogo.png",
+  twitterUsername: "@digitl_shado",
   githubApiQuery: `query ($number_of_repos: Int!) {
     viewer {
       name
