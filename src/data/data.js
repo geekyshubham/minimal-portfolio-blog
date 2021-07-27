@@ -14,7 +14,7 @@ module.exports = {
       avatarUrl
       isHireable
       resourcePath
-      repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: { field: STARGAZERS, direction:ASC } ) {
+      repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC} ) {
         nodes {
           name
           description
@@ -42,7 +42,7 @@ module.exports = {
     }
   }`,
   githubApiVariables: {
-    number_of_repos: 12,
+    number_of_repos: 10,
   }, 
   SiteSocialLinks: {
     twitter: 'https://twitter.com/digitl_shado',

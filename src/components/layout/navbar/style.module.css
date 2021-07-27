@@ -5,7 +5,7 @@
 }
 
 .main_navigation{
-    overflow: auto;
+    overflow: hidden;
 }
 @media (max-width: 300px){
 .navlinks span{

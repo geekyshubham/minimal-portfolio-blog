@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.geekyshubham.tk',
-        sitemap: 'https://www.geekyshubham.tk/sitemap.xml',
+        host: data.SiteUrl,
+        sitemap: data.SiteUrl+'/sitemap.xml',
         policy: [{
           userAgent: '*',
           allow: '/'
