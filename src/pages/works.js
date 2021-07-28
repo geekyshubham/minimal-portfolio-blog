@@ -15,7 +15,7 @@ const WorkIndex = ({ data }) => {
         <Intro>
           <ContainerLayout>
 
-            <SubTitle className="text-dark">
+            <SubTitle className="work-title-text">
               Selected Work
             </SubTitle>
 

@@ -54,7 +54,7 @@ export const Author = styled.div`
 `
 export const FooterSocialMedia = styled.ul`
 	list-style: none;
-	padding-left: 0;
+	padding: 0rem 1.5rem;
 	@media(max-width: ${sizes.breakpointPhone}) {
 		display: flex;
 		align-items: center;

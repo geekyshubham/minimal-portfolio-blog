@@ -2,12 +2,11 @@ import styled from 'styled-components';
 import {colors,sizes} from '../../../data/variables';
 
 export const Intro = styled.div`
-  padding: 8rem 0 4rem 0;
+  padding: 2rem 0rem;
   font-family: "GT-Walsheim-Pro-Regular";
 `;
 export const HeaderIntro = styled.header`
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
   grid-gap: 34px;
   justify-content: space-between;
   margin-bottom: 6rem;
@@ -24,7 +23,8 @@ export const SubTitle = styled.h3`
   font-size: 2rem;
   text-transform: capitalize;
   font-family: "GT-Walsheim-Pro-Bold";
-  text-decoration: underline;
+  text-decoration: none;
+  color: ${colors.primary};
 `
 export const Text = styled.p`
   font-size: .98rem;
@@ -104,4 +104,6 @@ export const Category = styled.span`
   padding: .5rem 1rem;
   margin-right: 1rem;
   border: 3px solid ${colors.primary};
+  display:block;
+  max-width:fit-content;
 `

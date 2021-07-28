@@ -1,7 +1,7 @@
   
 export const colors = {
   primary: "#ff2d2d",
-  secondar: "#ff2d2d",
+  primaryLight: "#ff2d2d33",
   inverse: "#fff",
   // colors
   darkGrey: "#333447",

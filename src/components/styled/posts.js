@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Intro = styled.div`
-  padding: 8rem 0 4rem 0;
+  padding: 2rem 0rem;
   text-align: left;
 `;
 

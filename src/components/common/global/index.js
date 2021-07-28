@@ -1,6 +1,6 @@
 import './fonts.css';
 import { createGlobalStyle } from 'styled-components';
-import {colors} from "../../../data/variables";
+import {colors,sizes} from "../../../data/variables";
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -11,6 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::selection {
+  background-color: #ff2d2d33;
+}
   ::-webkit-scrollbar{
     width: 6px;
   }
@@ -120,7 +123,16 @@ export const GlobalStyle = createGlobalStyle`
     [hidden] {
       display: none;
     }
-    
+
+
+
+    .work-title-text{
+      color: ${colors.primary};
+      text-align: center;
+      text-decoration: none;
+    }
+
+
     .text-dark {
       color: ${colors.black};
     }
@@ -138,10 +150,22 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-@media(max-width:355px){
-  #navlinks>span{
+@media(max-width: 350px){
+   #navlinks>span{
 display:none;
 }
+}
+
+ @media(max-width: ${sizes.breakpointPhone}){
+  .work-title-text{
+    font-size: 10vw;
+  }
+}
+
+@media(min-width:${sizes.breakpointTablet}){
+  .work-title-text{
+    font-size: 4vw;
+  }
 }
   
 .lined-link {
