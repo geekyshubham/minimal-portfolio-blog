@@ -5,6 +5,7 @@ import About from "../components/about"
 
 const IndexPage = () => (
     <Layout> 
+      <meta name="msvalidate.01" content="44E73AAC2392D270C238935BB9028F82" />
       <Seo title = "About me" / >
       <About /> 
     </Layout>
