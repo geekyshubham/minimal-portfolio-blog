@@ -5,7 +5,7 @@ module.exports = {
   SiteAuthor: 'Shubham Takankhar',
   SiteDescription: 'Shubham Takankhar is a Programmer, Security Researcher, Technologist and Blogger.',
   defaultDescription: 'GeekyShubham is personal portfolio and blog of Shubham Takankhar.',
-  SiteUrl: "https://www.geekyshubham.tk",
+  SiteUrl: "https://geekyshubham.tk",
   image: "/images/siteLogo.png",
   twitterUsername: "@digitl_shado",
   githubApiQuery: `query ($number_of_repos: Int!) {
@@ -56,8 +56,8 @@ module.exports = {
     zipCode: 'ZipCode',
   },
   SiteContact: {
-    email: 'takankhar@gmail.com',
-    phone: 'phone number',
+    email: 'mail@geekyshubham.tk',
+    phone: '',
   },
-  SiteCopyright: '2020',
+  SiteCopyright: '2021',
 };
