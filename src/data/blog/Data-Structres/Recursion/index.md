@@ -14,45 +14,40 @@ slug: permutations-string-recursion-
 ---
 
 
-### Permutation of a String
 
-#### To start with I would like to say that it works something like this
+What is Permutation?
+---------------------
+It means to take a string and to permute all the characters of the string.
 
-- First we loop through every character in that string.
-- Then for every character we call the function recursively to eliminating the selected character and permuting through the remaining string.
+Alogorithm
+---------------------
+
++ First we loop through every character in that string.
++ Then for every character we call the function recursively [Current Character]
++ For every recursion we take the  preceding charactes and procedding characters and put them in a new string. [nextString]
++ Simultaneously we check whether the length of string is 0. If so we print the permutation.
+
+#### Source Code
 
 
+```cpp    
 
-#### Source Code:
-
-
-```cpp
 #include<iostream>
 using namespace std;
 
-#include <bits/stdc++.h>
-#include <string>
-
-void permutes(string str,string ans=""){
-    if (str.length()==0){
-        cout<<ans<<" ";
-        return ;
+void permutes(string str,string permute=""){
+    if(str.length() == 0 ){
+    cout<<permute<<endl;
+    return;
     }
 
-   for(int i=0;i<str.length();i++){
-       char ch = str[i];
-       string nxt = str.substr(0,i) + str.substr(1+i);
-       permutes(nxt,ans+ch);
-
-   }
-}
-
-int main(){
-    string str = "abc";
-    permutes(str);
-return 0;
+    for(int i=0;i<str.length();i++){
+        char currentCharacter = str[i];
+        nextString = str.substr(0,i) + str.substr(i+1);
+        permutation(nextString,permute+currentCharacter);
+    }
 }
 
 ```
-##### this is it
+
 

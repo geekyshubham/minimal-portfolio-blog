@@ -13,6 +13,8 @@ const BlogPost = ({data, pageContext, location}) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
+
+  
   return (
     <Layout location={location} title={siteTitle}>
       <Seo

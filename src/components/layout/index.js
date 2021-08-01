@@ -3,8 +3,11 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./navbar"
 import Footer from "./footer"
-
+import "./style.css"
 import {GlobalStyle, ContainerLayout, MainContent} from '../common';
+
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
