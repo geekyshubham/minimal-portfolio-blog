@@ -4,3 +4,17 @@
     --deckgo-highlight-code-scroll:0;
     --deckgo-highlight-code-carbon-margin:2rem;
 }
+
+div>ul>li{
+    text-align: left;
+}
+
+div>ul{
+    margin: 20px 0px;
+    line-height: 1.5rem;
+    font-size:16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top:5rem;
+}
