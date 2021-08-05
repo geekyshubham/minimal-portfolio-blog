@@ -31,7 +31,7 @@ export const SmallText = styled.small`
 `
 export const ArticleBody = styled.div `
   margin-top: 5rem;
-  
+  text-align:left;
   p {
     text-align: initial;
     font-size: 1rem;

@@ -1,7 +1,7 @@
 ---
-title: Blog
+title: Personal Blog
 date: '2021-08-01T19:42:39.398Z'
-category: Full Stack development
+category: Web App
 tags:
     - react-js
     - js
@@ -12,7 +12,6 @@ lastmod: '2021-08-01T19:42:39.398Z'
 ---
 # Personal Blog Site
 
-![double_address_fields](./blog-image.jpg)
 
 
 
