@@ -1,10 +1,11 @@
-import {theme_switch,main_navigation,logo_anim} from './style.module.css'
+import {theme_switch,main_navigation} from './style.module.css'
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { User, Briefcase, Feather,  GitHub, Sun , Moon } from 'react-feather'
 
 import {NavbarElement, NavbarList, NavbarLogo} from './style'
+
 
 
 const Navbar = ({ siteTitle }) => (
@@ -27,9 +28,10 @@ const Navbar = ({ siteTitle }) => (
             </NavbarList> 
           </div>
       </NavbarElement>
-      {/* < div className = {theme_switch}>
-       < Sun onClick= {()=>{console.log('sun clicked')}}/> <Moon onClick= {()=>{console.log('moon clicked')}}/>
-       </div> */}
+      < div className = {theme_switch}>
+       <Sun onClick= {()=>{console.log('sun clicked')}}/>
+       <Moon onClick= {()=>{console.log('moon clicked')}}/>
+       </div>
     </div>
   </nav>
 )
