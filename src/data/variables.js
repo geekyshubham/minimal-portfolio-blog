@@ -11,7 +11,6 @@ export const colors =  {
 export const darkColors = {
   primary: "#ff2d2d",
   primaryLight: "#ff2d2d33",
-  inverse: "#fff",
   // colors
   darkGrey: "#333447",
   black: "#000",

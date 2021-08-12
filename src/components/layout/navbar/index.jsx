@@ -28,10 +28,10 @@ const Navbar = ({ siteTitle }) => (
             </NavbarList> 
           </div>
       </NavbarElement>
-      < div className = {theme_switch}>
+      {/* < div className = {theme_switch}>
        <Sun onClick= {()=>{console.log('sun clicked')}}/>
        <Moon onClick= {()=>{console.log('moon clicked')}}/>
-       </div>
+       </div> */}
     </div>
   </nav>
 )
