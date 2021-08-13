@@ -44,8 +44,8 @@ Now, let's see what's inside `Makefile`.
 say_hello:
     echo "Hello World"
 ```
-> [!NOTE]
-> Make Sure You Use **Tab** key to indent the code not spaces else it won't work.
+
+> <div class="note"><div class="note-title">Note</div><div class="note-body">Make Sure You Use <strong> Tab </strong> key to indent the code not spaces else it won't work.</div>
 
 Now, Start by typing `make` in your terminal. The output will be something like this.
 
@@ -78,8 +78,7 @@ clean:
 
 ```
 
-> [!TIP]
-> You can use any target name you want instead of compile/run/clean.
+> <div class="tip"><div class="tip-title">Tip</div><div class="tip-body">You can use any target name you want instead of compile/run/clean.</div></div>
 
 
 Check out how it works. We used the targets `compile` and `run` as arguments to `make`. Which performed the actions assigned to it.
