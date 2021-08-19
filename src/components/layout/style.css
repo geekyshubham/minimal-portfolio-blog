@@ -2,7 +2,10 @@
 :root{
     --deckgo-highlight-code-carbon-box-shadow:0;
     --deckgo-highlight-code-scroll:0;
-    --deckgo-highlight-code-carbon-margin:2rem;
+    @media screen and (min-width: 576px){
+        --deckgo-highlight-code-carbon-margin:2rem 0rem;
+    }
+    
 }
 
 div>ul>li{
@@ -24,14 +27,14 @@ code{
 
 /* markdown alerts styling */
 
-blockquote>div.note{
+div.note{
     background-color: #E2DAF1;
     display:block;
     padding: 1rem 0.5rem;
     border-radius: 2px;
 }
 
-blockquote>div.note>div.note-title::before{
+div.note>div.note-title::before{
    content: "❕ ";
    display: inline-block;
    padding-right: 3px;
@@ -39,26 +42,26 @@ blockquote>div.note>div.note-title::before{
    font-weight: 900;
 }
 
-blockquote>div.note>div.note-title{
+div.note>div.note-title{
     font-size: 1rem;
     font-weight: bold;
     padding-bottom: 0.5rem;
 }
 
-blockquote>div.note>div.note-body{
+div.note>div.note-body{
     margin-top: 0.5rem;
 }
 
 /* tip */
 
-blockquote>div.tip{
+div.tip{
     background-color: #D2F9D2;
     display:block;
     padding: 1rem 0.5rem;
     border-radius: 2px;
 }
 
-blockquote>div.tip>div.tip-title::before{
+div.tip>div.tip-title::before{
     content:"💡 ";
       display: inline-block;
    padding-right: 3px;
@@ -66,12 +69,12 @@ blockquote>div.tip>div.tip-title::before{
    font-weight: 900;
 }
 
-blockquote>div.tip>div.tip-title{
+div.tip>div.tip-title{
     font-size: 1rem;
     font-weight: bold;
     padding-bottom: 0.5rem;
 }
 
-blockquote>div.tip>div.tip-body{
+div.tip>div.tip-body{
     margin-top: 0.5rem;
 }

@@ -6,8 +6,8 @@ image: ./make-file.webp
 imageCredit: ''
 date: '2021-08-12T13:43:43.517Z'
 time: 3
-description: If you run or update a repetitive task in your terminal, you will find that it takes a lot of time. That's why we use Make File.
-lastmod: '2021-08-12T13:51:26.510Z'
+description: 'If you run or update a repetitive task in your terminal, you will find that it takes a lot of time. That''s why we use Make File.'
+lastmod: '2021-08-18T09:45:44.776Z'
 slug: make-file
 ---
 
@@ -45,7 +45,7 @@ say_hello:
     echo "Hello World"
 ```
 
-> <div class="note"><div class="note-title">Note</div><div class="note-body">Make Sure You Use <strong> Tab </strong> key to indent the code not spaces else it won't work.</div>
+<div class="note"><div class="note-title">Note</div><div class="note-body">Make Sure You Use <strong> Tab </strong> key to indent the code not spaces else it won't work.</div></div>
 
 Now, Start by typing `make` in your terminal. The output will be something like this.
 
@@ -78,7 +78,7 @@ clean:
 
 ```
 
-> <div class="tip"><div class="tip-title">Tip</div><div class="tip-body">You can use any target name you want instead of compile/run/clean.</div></div>
+<div class="tip"><div class="tip-title">Tip</div><div class="tip-body">You can use any target name you want instead of compile/run/clean.</div></div>
 
 
 Check out how it works. We used the targets `compile` and `run` as arguments to `make`. Which performed the actions assigned to it.
