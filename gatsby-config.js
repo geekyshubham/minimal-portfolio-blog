@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-sitemap',np
+    'gatsby-plugin-sitemap',
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-image`,
