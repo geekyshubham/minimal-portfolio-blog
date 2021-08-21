@@ -106,6 +106,24 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+  createRedirect({
+    fromPath: "/linkedin",
+    toPath: "https://www.linkedin.com/in/shubham-takankhar/",
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
+  createRedirect({
+    fromPath: "/github",
+    toPath: "https://github.com/geekyshubham",
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
+  createRedirect({
+    fromPath: "/hackerrank",
+    toPath: "https://www.hackerrank.com/digit4lShad0w",
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
